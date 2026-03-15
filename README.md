@@ -1,16 +1,15 @@
-# React + Vite
+A lyric-based music recommendation system that suggests five similar songs based on the lyrics of a selected track. The system uses NLP techniques to process song lyrics and computes similarity scores to recommend songs with similar themes and linguistic patterns.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Key Features:**
 
-Currently, two official plugins are available:
+• NLP-based lyric processing
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+• TF-IDF vectorization of song lyrics
 
-## React Compiler
+• Cosine similarity for song recommendations
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+• Returns top 5 most similar songs
 
-## Expanding the ESLint configuration
+**Tech Stack:**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Python, scikit-learn, Pandas, NumPy, NLP
